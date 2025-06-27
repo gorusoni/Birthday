@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Moto</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #fff0f5, #ffe4e1);
+      font-family:'Courier New', Courier, monospace;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #fffaf0;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba(255, 105, 180, 0.5);
+      text-align: center;
+      animation: slideUp 1.5s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .image-row p {
+      flex: 1;
+      margin: 0 20px;
+      font-size: 1.8em;
+      color: #ff1493;
+      font-weight: bold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #444;
+      text-align: left;
+      line-height: 1.8em;
+    }
+
+    #last {
+      font-family: 'Segoe Script', cursive;;
+      text-align: center;
+      margin-top: 30px;
+      font-size: 1.3em;
+      color: #d63384;
+    }
+
+    .reply-section {
+      margin-top: 40px;
+    }
+
+    .reply-section p {
+      font-size: 1.2em;
+      color: #ff1493;
+      font-weight: bold;
+    }
+
+    .reply-links {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 15px;
+    }
+
+    .reply-links a {
+      text-decoration: none;
+      background-color: #ff69b4;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .reply-links a:hover {
+      background-color: #ff85c1;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+<script>
+  let name = prompt("Enter your name");
+  if (name) name = name.trim().toLowerCase();
+
+  const allowedNames = ["moto"];
+
+  if (allowedNames.includes(name)) {
+    document.title = `Happy Birthday ${name}`;
+    document.body.innerHTML = `
+      <div class="container">
+        <div class="image-row">
+          <img src="brosis.gif" alt="Left image">
+          <p>This is for you Moto 💌</p>
+          <img src="brolap.gif" alt="Right image">
+        </div>
+
+        <p> I Know my speaking and writting in english is week that's why I now, i write in our Higlish <br>
+        Moto I know tunne mna kiya thha mujhe assa kuch bnane ke liye but mera ek portfolio ka idea thha but mne abhi uske sub parts tere liye use kar liye <br>
+        Moto , mujhe pata hai ki m tujhe bahut tang karta hu , bin matlv pareshan karta hu , or aage bhi karta rahunga <br>
+        tujhe hamesha kisi na kisi cheej ke liye force karta rahta hu chahe tera man hoye ya na hoye karne ko frr bhi tu mana nahi karti <br>
+        ek tu hi hai jo mujhe samajhti hai or meri har baat ko samajhne ki kosish bhi karti hai <br>
+        teri har baat maan ne ka mera man bhi karta hai because ,<br>
+        tu hi h jo hamesha meri har galti par sabke saamne support or sabke jaane mujhe akele m samajati hai<br>
+        mere or dada ka sapna thha ki mae greatest buissnessman banna hai bachpan se hi isslye khudko vese tiyar kar rha hu , <br>
+        but dil hamesha kheta hai ki tujhe hamesha saath rakhu tere liye hamesa mere dimag ko haarn padta hai....<br>
+        sach btau mere k khud pata nhi chalta ki m ye cheej kab or kese relate kar gya mtlv ki mere dimag ko baba hi operate karta hai <br>
+        or kaafi assi cheeje hai jo mene tere saath sikhi hai jese ki<br>
+        chahe padhai m ho , gyan mae ho , saaf safai m ho , hansi majak m ho or bhi bahut kuch <br>
+        last mae bss itna kehna chahunga ki tera bahut bahut thank you ki tune mujhe itna kuch sikhaya hai or hamesha support kiya hai <br>
+        meri life mae hamesha ek alag hi jagh bani rhaegi , tu hamesha mere liye special or important bani rhegi chahe m kuch kar pau ya nahi life mae<br></p>
+
+        <p id="last">
+          last mae bss itna kehna chahunga ki , <br>
+          agla janam mile ya na mile iss sangam par , poore kalp m frr ek baar tera bhai ban na chahunga , but next time Real brother not from different parents <br>
+          <strong>I Love You Behan ❤️❤️❤️</strong><br>
+          <strong>And once again , Happy Birthday 😊😊</strong>
+        </p>
+
+        <div class="reply-section">
+          <p>Reply to me if you felt anything 🥹❤️:</p>
+          <div class="reply-links">
+            <a href="https://wa.me/919466438225" target="_blank">WhatsApp</a>
+            <a href="mailto:gorusoni564@gmail.com">Email</a>
+          </div>
+        </div>
+      </div>
+    `;
+  } else {
+    alert("You are not Moto (Diksha). This is only for My Moto 😎");
+  }
+</script>
+</body>
+</html>
