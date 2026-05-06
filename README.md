@@ -1,4 +1,7 @@
 # Birthday
+
+Password :- 12345678
+
 # 🎉 Birthday Surprise Page 🎂
 
 Welcome to the **Birthday** project — a simple and sweet webpage created to celebrate a special birthday moment!
